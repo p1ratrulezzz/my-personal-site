@@ -1,9 +1,22 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-  </head>
-  <div class="main-image-wrapper">
-    
-  </div>
-	</body>
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="main-image-wrapper">
+		<img src="images/monkey.jpg"></img>
+	</div>
+	<div class="phone-wrapper phone-number">
+		<span class="icon"></span>
+		<span class="phone"></span>
+	</div>
+	<script type="text/javascript">
+		(function($){
+			$(document).ready(function() {
+				$('.phone-wrapper.phone-number').find('.phone').html(atob('PGEgaHJlZj0idGVsOis3OTk5LTgwMi0yMDA3Ij4rNyg5OTkpODAyLTIwMDc8L2E+'));
+			});
+		})(jQuery);
+	</script>
+</body>
 </html>
