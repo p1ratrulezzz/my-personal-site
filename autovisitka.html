@@ -11,10 +11,15 @@
 		<span class="icon"></span>
 		<span class="phone"></span>
 	</div>
+	<>
 	<script type="text/javascript">
 		(function($){
 			$(document).ready(function() {
 				$('.phone-wrapper.phone-number').find('.phone').html(atob('PGEgaHJlZj0idGVsOis3OTk5LTgwMi0yMDA3Ij4rNyg5OTkpODAyLTIwMDc8L2E+'));
+				var $link = $('<a></a>');
+				$link.attr('href', atob('aHR0cHM6Ly93YS5tZS8rNzk5OTgwMjIwMDc='));
+				$link.html('написать в WhatsApp');
+				$('.phone-wrapper.whatsapp-number').find('.phone').append($link);
 			});
 		})(jQuery);
 	</script>
